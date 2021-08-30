@@ -7,6 +7,7 @@
 //
 
 #import "BHViewController.h"
+#import <beach/BeachAnalyze.h>
 
 @interface BHViewController ()
 
@@ -27,6 +28,7 @@
 }
 - (IBAction)createOrderClick:(id)sender {
     NSLog(@"create order click");
+    [BeachAnalyze version];
 }
 
 @end

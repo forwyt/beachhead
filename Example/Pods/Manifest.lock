@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  beach: 4d634cce796efdeed52718df49c2b58927347c67
+  beach: 79b9a13676de2a12c1dd6bb63aeb8e42fe3d5c25
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: 5655fff79d5a2c8a17d467db913de5871cba3c9e
