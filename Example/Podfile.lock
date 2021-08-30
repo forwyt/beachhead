@@ -1,0 +1,27 @@
+PODS:
+  - beach (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - beach (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  beach:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  beach: 4d634cce796efdeed52718df49c2b58927347c67
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 5655fff79d5a2c8a17d467db913de5871cba3c9e
+
+COCOAPODS: 1.10.1

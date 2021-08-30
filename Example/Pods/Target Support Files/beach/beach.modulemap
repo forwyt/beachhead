@@ -1,0 +1,6 @@
+framework module beach {
+  umbrella header "beach-umbrella.h"
+
+  export *
+  module * { export * }
+}
