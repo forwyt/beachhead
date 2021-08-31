@@ -1,15 +1,17 @@
 
-# BeachHead
+# BeachHead(启动优化)
 
+[blog](https://blog.jasonphd.com "blog") [llvm-clang](https://llvm.org/ "llvm-clang") 启动优化
 名称来自战争术语 抢滩登陆 (beach head)
 
 目的是更快的将iOS的application启动提速. 让用户更快的打开app !
 
 ### 原理
 ![](http://pic.jasonphd.com/upload/2021/08/612dd3e9a955e.png)
-page1 与 page2 都需要从无到有加载到物理内存中，从而触发两次 Page Fault。
+
+page1 与 page2 都需要从初始化状态到加载到物理内存中，这样如上图会触发两次 Page Fault。
 二进制重排 的做法就是将 function1  与 function2 放到一个内存页中，
-那么启动时则只需要加载一次 page 即可，也就是只触发一次 Page Fault
+那么启动时则只需要加载一次 page 即可
 
 以Demo为例:(路径在`$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt`)
 
@@ -86,6 +88,7 @@ _main
 5. 将重新排列之后的order利用
 将路径对应的文件copy到项目根目录
 然后将 工程的 taget -> build setting -> linking -> order file 写入刚才的路径 即可以完成二进制重排
+![](http://pic.jasonphd.com/upload/2021/08/612dde2e8c68d.png)
 
 🎉🎉🎉🎉🎉🎉
 
@@ -93,6 +96,8 @@ _main
 
 - Page Fault，开销在 0.6 ~ 0.8ms。
 当进程在进行一些计算时，CPU 会请求内存中存储的数据。在这个请求过程中，CPU 发出的地址是逻辑地址（虚拟地址），然后交由 CPU 当中的 MMU 单元进行内存寻址，找到实际物理内存上的内容。若是目标虚存空间中的内存页（因为某种原因），在物理内存中没有对应的页帧，那么 CPU 就无法获取数据。这种情况下，CPU 是无法进行计算的，于是它就会报告一个缺页错误（Page Fault）。因为 CPU 无法继续进行进程请求的计算，并报告了缺页错误，用户进程必然就中断了。这样的中断称之为缺页中断。在报告 Page Fault 之后，进程会从用户态切换到系统态，交由操作系统内核的 Page Fault Handler 处理缺页错误。
+
+- 如果操作有疑问请 参照Demo文件夹 包含了引入SDK到缠住order配置.
 
 - 灵感来源
 
