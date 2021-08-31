@@ -1,0 +1,22 @@
+{
+  "name": "beachhead",
+  "version": "0.1.0",
+  "summary": "A short description of beach.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jasonphd/beach",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jasonphd": "developerluhao@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/forwyt/beachhead.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "beach/Classes/**/*"
+}

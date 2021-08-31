@@ -1,0 +1,22 @@
+PODS:
+  - beachhead (0.1.0)
+
+DEPENDENCIES:
+  - beachhead (from `https://github.com/forwyt/beachhead.git`, tag `0.1.0`)
+
+EXTERNAL SOURCES:
+  beachhead:
+    :git: https://github.com/forwyt/beachhead.git
+    :tag: 0.1.0
+
+CHECKOUT OPTIONS:
+  beachhead:
+    :git: https://github.com/forwyt/beachhead.git
+    :tag: 0.1.0
+
+SPEC CHECKSUMS:
+  beachhead: 5b40f2961ab06814a552aec788b501a61091ceb0
+
+PODFILE CHECKSUM: 3924d0efc9b059fd6ee4e0401f67c281d6509fcc
+
+COCOAPODS: 1.10.1
