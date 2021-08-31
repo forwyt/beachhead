@@ -70,7 +70,7 @@ _main
 ### 操作流程
 
 1. 集成SDK
-`pod beachhead`
+`pod 'beachhead', :git => 'https://github.com/forwyt/beachhead.git',:tag => '0.1.0'` 
 
 2. 修改other c flag
 在 工程的 taget -> build setting -> other c flag 插人下列参数`-fsanitize-coverage=func,trace-pc-guard`
