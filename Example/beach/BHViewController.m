@@ -26,9 +26,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)otherFucntionBeforTargetFuction1{
+    NSLog(@"just for test");
+}
+-(void)otherFucntionBeforTargetFuction2{
+    NSLog(@"just for test");
+}
 - (IBAction)createOrderClick:(id)sender {
     NSLog(@"create order click");
     [BeachAnalyze version];
+    
+    [self otherFucntionBeforTargetFuction2];
+    [self otherFucntionBeforTargetFuction1];
+    
+    [BeachAnalyze getOrderFile];
 }
+
+
 
 @end
