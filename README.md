@@ -1,7 +1,12 @@
 
 # BeachHead(启动优化)
+!()[https://app.travis-ci.com/forwyt/beachhead.svg?branch=master]
 
-[blog](https://blog.jasonphd.com "blog") [llvm-clang](https://llvm.org/ "llvm-clang") 启动优化
+[blog](https://blog.jasonphd.com "blog")
+
+[llvm-clang](https://llvm.org/ "llvm-clang") 启动优化
+
+
 名称来自战争术语 抢滩登陆 (beach head)
 
 目的是更快的将iOS的application启动提速. 让用户更快的打开app !
