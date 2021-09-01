@@ -1,6 +1,6 @@
 
 # BeachHead(启动优化)
-!()[https://app.travis-ci.com/forwyt/beachhead.svg?branch=master]
+![](https://app.travis-ci.com/forwyt/beachhead.svg?branch=master)
 
 [blog](https://blog.jasonphd.com "blog")
 
