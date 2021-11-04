@@ -28,13 +28,13 @@
 }
 
 -(void)otherFucntionBeforTargetFuction1{
-    NSLog(@"just for test");
+    NSLog(@"just for test1");
 }
 -(void)otherFucntionBeforTargetFuction2{
-    NSLog(@"just for test");
+    NSLog(@"just for test2");
 }
 - (IBAction)createOrderClick:(id)sender {
-    NSLog(@"create order click");
+    NSLog(@"createOrderClick");
     [BeachAnalyze version];
     
     [self otherFucntionBeforTargetFuction2];
